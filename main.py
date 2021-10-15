@@ -1,12 +1,11 @@
 from utils import *
 from skimage import io
 
-N_SEGMENTS = 3
-
+N_SEGMENTS = 2
 
 if __name__ == '__main__':
     # reading in an image
-    img = io.imread('pictures/artificial-intelligence-construction.jpg')
+    img = io.imread('pictures/two.jpg')
 
     # generating the puzzle pieces
     pieces = generate_puzzle(img, n_segments=N_SEGMENTS)
